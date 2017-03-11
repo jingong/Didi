@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Didi</display-name>
+  <servlet>
+    <servlet-name>AdminServlet</servlet-name>
+    <servlet-class>servlet.AdminServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminServlet</servlet-name>
+    <url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DriverRegisterServlet</servlet-name>
+    <servlet-class>servlet.DriverRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DriverRegisterServlet</servlet-name>
+    <url-pattern>/DriverRegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>SijiXinxiUpdataServlet</servlet-name>
+    <servlet-class>servlet.SijiXinxiUpdataServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SijiXinxiUpdataServlet</servlet-name>
+    <url-pattern>/SijiXinxiUpdataServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateDriverServlet</servlet-name>
+    <servlet-class>servlet.UpdateDriverServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateDriverServlet</servlet-name>
+    <url-pattern>/UpdateDriverServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CarRegisterServlet</servlet-name>
+    <servlet-class>servlet.CarRegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CarRegisterServlet</servlet-name>
+    <url-pattern>/CarRegisterServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DriverCancelServlet</servlet-name>
+    <servlet-class>servlet.DriverCancelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DriverCancelServlet</servlet-name>
+    <url-pattern>/DriverCancelServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ReceieveOrderServlet</servlet-name>
+    <servlet-class>servlet.ReceieveOrderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReceieveOrderServlet</servlet-name>
+    <url-pattern>/ReceieveOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CarSelectServlet</servlet-name>
+    <servlet-class>servlet.CarSelectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CarSelectServlet</servlet-name>
+    <url-pattern>/CarSelectServlet</url-pattern>
+  </servlet-mapping>
+  <!-- 下面的是司机角色所用到的Servlet -->
+  <servlet>
+    <servlet-name>DriverRegister</servlet-name>
+    <servlet-class>servletdriver.DriverRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DriverRegister</servlet-name>
+    <url-pattern>/DriverRegister</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateDriver</servlet-name>
+    <servlet-class>servletdriver.UpdateDriver</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateDriver</servlet-name>
+    <url-pattern>/UpdateDriver</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
